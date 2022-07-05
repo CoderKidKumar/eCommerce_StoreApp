@@ -75,7 +75,7 @@
                                     <td><img src="../../img/products/<?php echo $items['itemPicture'] ?>"
                                             style="height: 80px; width:auto; object-fit: cover;"></td>
                                     <td><?php echo $items['itemName'] ?></td>
-                                    <td><?php echo money_format('%.2n',$items['itemPrice']) ?></td>
+                                    <td><?php echo "$".number_format($items['itemPrice'], 2, '.', '') ?></td>
                                     <td><?php echo $items['itemQuant'] ?></td>
                                     <th><?php echo $items['CategoryName'] ?></th>
                                     <td>
