@@ -39,7 +39,7 @@ $cart = unserialize($_SESSION["shoppingCart"]);
                                 </form>
                             </td>
                             <td>
-                                <h6><?php echo "$".number_format($getItem['itemPrice'], 2, '.', '');?></h6>
+                                <h6><?php echo "$".number_format($getItem['itemPrice'] * $qty, 2, '.', '');?></h6>
                             </td>
                         </tr>
                         <?php
@@ -59,11 +59,11 @@ $cart = unserialize($_SESSION["shoppingCart"]);
                         <li
                             class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                             Subtotal
-                            <span><?php echo "$".number_format($getItem['itemPrice'], 2, '.', '');?></span>
+                            <span><?php echo "$".number_format($cart->getTotal_price(), 2, '.', '');?></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                             Tax
-                            <span><?php echo "$".number_format($getItem['itemPrice'], 2, '.', '');?></span>
+                            <span><?php echo "$".number_format($cart->getTaxes(), 2, '.', '');?></span>
                         </li>
                         <li
                             class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
@@ -73,7 +73,7 @@ $cart = unserialize($_SESSION["shoppingCart"]);
                                     <p class="mb-0">(with tax)</p>
                                 </strong>
                             </div>
-                            <span><strong><?php echo "$".number_format($getItem['itemPrice'], 2, '.', '');?></strong></span>
+                            <span><strong><?php echo "$".number_format($cart->getTotal_price_Tax(), 2, '.', '');?></strong></span>
                         </li>
                     </ul>
                     <a href="checkout.php" class="btn btn-info btn-block" role="button">Checkout</a>
