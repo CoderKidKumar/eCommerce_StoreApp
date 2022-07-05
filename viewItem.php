@@ -52,7 +52,7 @@ if (isset($_GET['id'])) {
                             <div class="form-group">
                                 <input type="number" name="quant" min="1" max="100" value="1" step="1">
                                 <input class="btn btn-outline-info btn-block mt-2" type="submit"
-                                    value="Add to Cart (<?php echo "$".number_format($items['itemPrice'], 2, '.', '') ?>)"
+                                    value="Add to Cart"
                                     name="Cart_ADD_NUM">
                         </form>
                         <br>
