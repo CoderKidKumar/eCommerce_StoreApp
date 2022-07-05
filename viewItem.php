@@ -38,7 +38,7 @@ if (isset($_GET['id'])) {
                 <h6>Sold By Apostolic Men Wear-House</h6>
                 <hr />
                 <h3 class="price">
-                    <b>Current Price:</b> $<?php echo money_format('%.2n', $items['itemPrice']) ?>
+                    <b>Current Price:</b><?php echo "$".number_format($items['itemPrice'], 2, '.', '') ?>
                 </h3>
                 <i><small class="text-muted"><?php echo $items['itemQuant'] ?> in stock</small></i>
                 <hr />
@@ -52,7 +52,7 @@ if (isset($_GET['id'])) {
                             <div class="form-group">
                                 <input type="number" name="quant" min="1" max="100" value="1" step="1">
                                 <input class="btn btn-outline-info btn-block mt-2" type="submit"
-                                    value="Add to Cart ($<?php echo money_format('%.2n', $items['itemPrice']) ?>)"
+                                    value="Add to Cart (<?php echo "$".number_format($items['itemPrice'], 2, '.', '') ?>)"
                                     name="Cart_ADD_NUM">
                         </form>
                         <br>

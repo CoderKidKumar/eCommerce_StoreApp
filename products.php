@@ -66,7 +66,7 @@ if (isset($_GET['items'])) {
                             <h4 class="card-title">
                                 <a style="color:black; font-weight: bolder;"><?php echo $items['itemName'] ?></a>
                             </h4>
-                            <h5>$<?php echo "$".number_format($getItem['itemPrice'], 2, '.', '');?></h5>
+                            <h5><?php echo "$".number_format($items['itemPrice'], 2, '.', '')?></h5>
                             <i class="card-text"><small class="text-muted"><?php echo $items['itemQuant'] ?> in
                                     stock
                                 </small></i>

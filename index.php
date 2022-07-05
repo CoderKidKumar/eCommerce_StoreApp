@@ -40,7 +40,7 @@
     </div>
 </div>
 <!-- Two 3 Column Sections-->
-<div class="container-fluid padding">
+<div class="container-fluid padding mb-5">
     <div class="row products text-center padding">
         <div class="col-xs-12 col-sm-4 col-md-2">
             <a href="products.php?items=coats">
