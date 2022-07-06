@@ -3,7 +3,7 @@
 >[See My Project](https://apostolicmenwearhouse.herokuapp.com/index.php)
 
 ## What this project is about?
-This project is not to solve a particular problem, but it is created to explore a full stack concept by creating a ecommerce site. This ecommerce site will be selling clothes, but not only is this project just going to simulate a ecommerce website, it will also have an admin page within to add, edit, or delete items and users. This will allow to show a functional CRUD (Create, Read, Update, Delete) application. Almost just like Shopify, we can have the admin to make any changes to their items and it will show up on the application. 
+This capstone project is not to solve a particular problem, but it is created to explore a full stack concept by creating a ecommerce site. This ecommerce site will be selling clothes, but not only is this project just going to simulate a ecommerce website, it will also have an admin page within to add, edit, or delete items and users. This will allow to show a functional CRUD (Create, Read, Update, Delete) application. Almost just like Shopify, we can have the admin to make any changes to their items and it will show up on the application. 
 This project originated from other projects at GCU, like creating blogging websites or a simple to do list, so to take those ideas and concepts to create a fully functional ecommerce site.
 
 ## What are the objectives of this project?
